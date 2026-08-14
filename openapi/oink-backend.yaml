@@ -1,0 +1,52 @@
+openapi: 3.1.0
+info:
+  title: Oink Protocol Backend API
+  version: 0.1.0
+paths:
+  /payments:
+    post:
+      summary: Create a payment intent
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePayment'
+      responses:
+        '201': { description: Created }
+  /payments/{id}/match:
+    post:
+      summary: Match settlers off-chain and submit assignment on-chain
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: integer } }
+      responses:
+        '200': { description: Matched }
+  /payments/{id}/fiat-confirmation:
+    post:
+      summary: Confirm local fiat funding after bank verification
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: integer } }
+      responses:
+        '200': { description: Confirmed }
+  /settlers:
+    post:
+      summary: Register/update a settler profile and capabilities
+      responses:
+        '201': { description: Registered }
+  /disputes:
+    post:
+      summary: Open a dispute with evidence hash
+      responses:
+        '201': { description: Opened }
+components:
+  schemas:
+    CreatePayment:
+      type: object
+      required: [creator, sourceAsset, destinationAsset, sourceAmount, destinationAmount, recipientRefHash]
+      properties:
+        creator: { type: string }
+        sourceAsset: { type: string, example: NGN }
+        destinationAsset: { type: string, example: USDT }
+        sourceAmount: { type: string }
+        destinationAmount: { type: string }
+        recipientRefHash: { type: string }
