@@ -2,6 +2,9 @@
 /target/
 **/target/
 
+# Generated Soroban test snapshots
+/integration-tests/test_snapshots/
+
 # Soroban build artifacts
 .soroban/
 **/.soroban/
