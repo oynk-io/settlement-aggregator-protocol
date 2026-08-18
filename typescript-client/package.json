@@ -1,1 +1,1 @@
-{"name":"@oink/protocol-client","version":"0.1.0","type":"module","main":"dist/index.js","types":"dist/index.d.ts","scripts":{"build":"tsc"},"dependencies":{"@stellar/stellar-sdk":"latest"},"devDependencies":{"typescript":"latest"}}
+{"name":"@oink/protocol-client","version":"0.1.0","private":true,"type":"module","main":"dist/index.js","types":"dist/index.d.ts","scripts":{"build":"tsc"},"dependencies":{"@stellar/stellar-sdk":"16.2.0"},"devDependencies":{"typescript":"7.0.2"}}

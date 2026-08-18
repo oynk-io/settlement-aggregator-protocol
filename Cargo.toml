@@ -4,6 +4,13 @@ members = [
   "contracts/settlement",
   "packages/oynk-sdk"
 ]
+exclude = ["integration-tests"]
+
+# The registry, treasury, and disputes directories are design drafts. They are
+# intentionally excluded until their interfaces and tests are production-ready.
 
 [workspace.dependencies]
-soroban-sdk = "26.0.0"
+soroban-sdk = "=26.1.0"
+
+[profile.release]
+overflow-checks = true

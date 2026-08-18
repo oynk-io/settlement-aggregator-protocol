@@ -3,19 +3,16 @@
 ```mermaid
 flowchart LR
   Customer[Customer pays local fiat/crypto] --> Backend[Oink Backend Matching Engine]
-  Backend --> Registry[Registry Contract]
-  Backend --> Payments[Payments Contract]
-  Settler[Settler liquidity actor] --> Registry
-  Settler --> Payments
-  Payments --> Treasury[Treasury Contract]
-  Payments --> Disputes[Disputes Contract]
-  Disputes --> Registry
+  Backend --> Settlement[Settlement Contract]
+  Settler[Settler liquidity actor] --> Settlement
+  Settlement --> Escrow[Stellar asset escrow]
   Indexer[Event Indexer] --> Dashboard[Analytics Dashboard]
-  Registry --> Indexer
-  Payments --> Indexer
-  Treasury --> Indexer
-  Disputes --> Indexer
+  Settlement --> Indexer
 ```
+
+Only the settlement contract and shared SDK are active Cargo workspace members.
+Registry, treasury, and standalone dispute contracts remain design drafts; the
+active settlement contract contains its own dispute and escrow lifecycle.
 
 ```mermaid
 stateDiagram-v2

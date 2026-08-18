@@ -9,6 +9,3 @@ crate-type = ["cdylib", "rlib"]
 [dependencies]
 soroban-sdk = { workspace = true }
 oynk-sdk = { path = "../../packages/oynk-sdk" }
-
-[dev-dependencies]
-soroban-sdk = { workspace = true, features = ["testutils"] }

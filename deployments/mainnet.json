@@ -1,0 +1,23 @@
+{
+  "network": "public",
+  "contract_id": "CDTDCQ2Y6OASQVJGOFBA2EHP3AV7N6FFULJNEFGMORLYMNHECX7OO2W6",
+  "deployment_transaction": "58eb6b55c774aeff2a54b90358fe459bf60f0089113b45caa6f697ef100d2fa0",
+  "deployed_at": "2026-07-11T17:06:19Z",
+  "creator": "GD7OZ2SVL25YJTOGRZRI5G7CLSSYW2WQRNH5DZEERTALQDYR67AEKLXO",
+  "constructor": {
+    "admin": "GDYAIIAYTORQ3EYQOS7HT5HAFB4ZZNPZSN2FLNJCIH7YX4XB7Q3XQLU3",
+    "manager": "GD7OZ2SVL25YJTOGRZRI5G7CLSSYW2WQRNH5DZEERTALQDYR67AEKLXO",
+    "settlement_asset": "CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75"
+  },
+  "onchain_wasm_hash": "90ce6eb603a4a26ff6193ca3cb5570dc905d216e7015e0a486d5104a6973b1e8",
+  "source": {
+    "repository": "https://github.com/oynk-io/settlement-aggregator-protocol.git",
+    "commit": null,
+    "verification_status": "unverified",
+    "note": "The public explorer identifies the deployed WASM but does not prove that any repository commit reproducibly builds to this hash. Set commit only after a locked build matches onchain_wasm_hash."
+  },
+  "evidence": {
+    "contract_explorer": "https://stellar.expert/explorer/public/contract/CDTDCQ2Y6OASQVJGOFBA2EHP3AV7N6FFULJNEFGMORLYMNHECX7OO2W6",
+    "deployment_transaction_explorer": "https://stellar.expert/explorer/public/tx/58eb6b55c774aeff2a54b90358fe459bf60f0089113b45caa6f697ef100d2fa0"
+  }
+}

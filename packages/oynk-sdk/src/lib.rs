@@ -3,6 +3,9 @@
 pub mod errors;
 pub mod events;
 
+#[cfg(test)]
+mod test;
+
 pub use errors::SettlementError;
 
 use soroban_sdk::{contracttype, Address, BytesN};
