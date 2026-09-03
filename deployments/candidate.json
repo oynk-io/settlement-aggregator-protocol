@@ -1,0 +1,27 @@
+{
+  "status": "tested-not-deployed",
+  "source": {
+    "repository": "https://github.com/oynk-io/settlement-aggregator-protocol.git",
+    "commit": "60489c36f9e69aeea54e4075948e5b3e2083d440",
+    "maintainer": {
+      "name": "Emmanuel Ekoja",
+      "github": "https://github.com/emmanuelekoja"
+    }
+  },
+  "build": {
+    "command": "./scripts/build.sh",
+    "rustc": "1.97.1 (8bab26f4f 2026-07-14)",
+    "cargo": "1.97.1 (c980f4866 2026-06-30)",
+    "stellar_cli": "27.1.0 (8e402ea28202950b272fbabc34caad4d2f64fe87)",
+    "wasm": "target/wasm32v1-none/release/oynk_settlement_protocol_contract.wasm",
+    "wasm_size_bytes": 53788,
+    "wasm_sha256": "d16b5f8a2b9971e2ea45bf0737731ed6348bd83b7c30fde275589f69ea132bc9"
+  },
+  "tests": {
+    "sdk_invariants": 5,
+    "wasm_lifecycles": 2,
+    "failed": 0
+  },
+  "deployment": null,
+  "note": "This manifest identifies the tested public candidate. It does not claim equivalence to the historical mainnet deployment recorded in mainnet.json."
+}
