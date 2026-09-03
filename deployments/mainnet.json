@@ -9,15 +9,31 @@
     "manager": "GD7OZ2SVL25YJTOGRZRI5G7CLSSYW2WQRNH5DZEERTALQDYR67AEKLXO",
     "settlement_asset": "CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75"
   },
-  "onchain_wasm_hash": "90ce6eb603a4a26ff6193ca3cb5570dc905d216e7015e0a486d5104a6973b1e8",
+  "onchain_wasm_hash": "d16b5f8a2b9971e2ea45bf0737731ed6348bd83b7c30fde275589f69ea132bc9",
+  "initial_deployment": {
+    "wasm_hash": "90ce6eb603a4a26ff6193ca3cb5570dc905d216e7015e0a486d5104a6973b1e8",
+    "source_verification_status": "unverified"
+  },
   "source": {
     "repository": "https://github.com/oynk-io/settlement-aggregator-protocol.git",
-    "commit": null,
-    "verification_status": "unverified",
-    "note": "The public explorer identifies the deployed WASM but does not prove that any repository commit reproducibly builds to this hash. Set commit only after a locked build matches onchain_wasm_hash."
+    "commit": "60489c36f9e69aeea54e4075948e5b3e2083d440",
+    "verification_status": "verified-current-version",
+    "note": "The source commit builds to onchain_wasm_hash with the locked toolchain recorded in candidate.json. The live WASM was fetched after the upgrade and matched byte-for-byte."
+  },
+  "latest_upgrade": {
+    "wasm_upload_transaction": "a59c25cd5c913938e8d759a7055ae4dd3b3e560b0fc650450bb57401540d8737",
+    "wasm_upload_ledger": 64258268,
+    "wasm_uploaded_at": "2026-09-03T18:35:09Z",
+    "upgrade_transaction": "cc80ceb25ca42487a486aa297c8f497637b1a246395303d88f1a24f7f42cf1a4",
+    "upgrade_ledger": 64258274,
+    "upgraded_at": "2026-09-03T18:35:45Z",
+    "administrator": "GDYAIIAYTORQ3EYQOS7HT5HAFB4ZZNPZSN2FLNJCIH7YX4XB7Q3XQLU3",
+    "wasm_hash": "d16b5f8a2b9971e2ea45bf0737731ed6348bd83b7c30fde275589f69ea132bc9"
   },
   "evidence": {
     "contract_explorer": "https://stellar.expert/explorer/public/contract/CDTDCQ2Y6OASQVJGOFBA2EHP3AV7N6FFULJNEFGMORLYMNHECX7OO2W6",
-    "deployment_transaction_explorer": "https://stellar.expert/explorer/public/tx/58eb6b55c774aeff2a54b90358fe459bf60f0089113b45caa6f697ef100d2fa0"
+    "deployment_transaction_explorer": "https://stellar.expert/explorer/public/tx/58eb6b55c774aeff2a54b90358fe459bf60f0089113b45caa6f697ef100d2fa0",
+    "wasm_upload_transaction_explorer": "https://stellar.expert/explorer/public/tx/a59c25cd5c913938e8d759a7055ae4dd3b3e560b0fc650450bb57401540d8737",
+    "upgrade_transaction_explorer": "https://stellar.expert/explorer/public/tx/cc80ceb25ca42487a486aa297c8f497637b1a246395303d88f1a24f7f42cf1a4"
   }
 }

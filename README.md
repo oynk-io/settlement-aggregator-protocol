@@ -30,11 +30,11 @@ The test suites are public in
 [`packages/oynk-sdk/src/test.rs`](packages/oynk-sdk/src/test.rs) and
 [`integration-tests/src/lib.rs`](integration-tests/src/lib.rs).
 
-## Published candidate evidence
+## Published build evidence
 
 [`deployments/candidate.json`](deployments/candidate.json) records the exact
 source commit, locked toolchain, generated WASM hash, and passing test counts
-for the current public contract candidate. The recorded source commit builds to
+for the current public contract version. The recorded source commit builds to
 `d16b5f8a2b9971e2ea45bf0737731ed6348bd83b7c30fde275589f69ea132bc9`.
 
 ## Deploy
@@ -50,13 +50,11 @@ explicitly for any other configured Stellar network.
 ## Mainnet deployment evidence
 
 [`deployments/mainnet.json`](deployments/mainnet.json) records the publicly
-observable contract ID, creation transaction and time, constructor addresses,
-and on-chain WASM hash. The explorer currently reports the contract as
-unverified, so the manifest deliberately does not claim an exact source commit.
-That field must remain unset until a locked, reproducible build produces the
-recorded on-chain WASM hash. The published candidate is real contract work with
-reproducible tests, but it is not represented as the exact source of that older
-deployment.
+observable contract ID, original creation evidence, constructor addresses,
+source commit, current WASM hash, and the September 3, 2026 upload and upgrade
+transactions. The contract now runs the reproducible artifact recorded in
+`deployments/candidate.json`. The original July 2026 WASM remains identified
+separately as source-unverified historical provenance.
 
 ## Notes
 Matching, FX pricing, KYC/AML, bank verification, and settlement routing are intentionally off-chain for v1. The contracts preserve verifiable on-chain state and events.

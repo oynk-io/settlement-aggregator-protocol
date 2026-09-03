@@ -1,5 +1,5 @@
 {
-  "status": "tested-not-deployed",
+  "status": "deployed-mainnet",
   "source": {
     "repository": "https://github.com/oynk-io/settlement-aggregator-protocol.git",
     "commit": "60489c36f9e69aeea54e4075948e5b3e2083d440",
@@ -22,6 +22,13 @@
     "wasm_lifecycles": 2,
     "failed": 0
   },
-  "deployment": null,
-  "note": "This manifest identifies the tested public candidate. It does not claim equivalence to the historical mainnet deployment recorded in mainnet.json."
+  "deployment": {
+    "network": "public",
+    "contract_id": "CDTDCQ2Y6OASQVJGOFBA2EHP3AV7N6FFULJNEFGMORLYMNHECX7OO2W6",
+    "wasm_upload_transaction": "a59c25cd5c913938e8d759a7055ae4dd3b3e560b0fc650450bb57401540d8737",
+    "upgrade_transaction": "cc80ceb25ca42487a486aa297c8f497637b1a246395303d88f1a24f7f42cf1a4",
+    "upgraded_at": "2026-09-03T18:35:45Z",
+    "administrator": "GDYAIIAYTORQ3EYQOS7HT5HAFB4ZZNPZSN2FLNJCIH7YX4XB7Q3XQLU3"
+  },
+  "note": "The historical deployment began with a different, source-unverified WASM. The contract was upgraded to this tested candidate, and the live WASM was fetched and matched to wasm_sha256 after confirmation."
 }
