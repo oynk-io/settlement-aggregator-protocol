@@ -18,8 +18,9 @@
     "wasm_sha256": "d16b5f8a2b9971e2ea45bf0737731ed6348bd83b7c30fde275589f69ea132bc9"
   },
   "tests": {
+    "suite_commit": "9bb2a0e1d60e4b9ac4fd5cf53e19ad564903a16d",
     "sdk_invariants": 5,
-    "wasm_lifecycles": 2,
+    "wasm_integration": 12,
     "failed": 0
   },
   "deployment": {

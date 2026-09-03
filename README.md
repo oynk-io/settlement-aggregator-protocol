@@ -28,7 +28,10 @@ WASM-level fiat-to-crypto and fiat-to-fiat lifecycle tests.
 
 The test suites are public in
 [`packages/oynk-sdk/src/test.rs`](packages/oynk-sdk/src/test.rs) and
-[`integration-tests/src/lib.rs`](integration-tests/src/lib.rs).
+[`integration-tests/src/lib.rs`](integration-tests/src/lib.rs). They currently
+run five SDK invariant tests and twelve WASM integration tests covering
+authorization, replay safety, expiry, cancellation, refunds, disputes, upgrade
+authorization, adversarial sequences, and amount conservation.
 
 ## Published build evidence
 
